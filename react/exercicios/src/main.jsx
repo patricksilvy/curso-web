@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+
+import Primeiro from './components/Primeiro'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <h1>React 2</h1>
+  <Primeiro />
 )

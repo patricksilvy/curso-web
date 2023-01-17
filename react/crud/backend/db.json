@@ -1,9 +1,3 @@
 {
-  "users": [
-    {
-      "id": 2,
-      "name": "Maria Julia da Silva",
-      "email": "das@empresa.com"
-    }
-  ]
+  "users": []
 }

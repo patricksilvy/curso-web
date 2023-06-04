@@ -1,3 +1,5 @@
+import Layout from "@/components/Layout"
+
 const Jsx = () => {
     const titulo = <h1>JSX é um conceito Central</h1>
 
@@ -6,13 +8,13 @@ const Jsx = () => {
     }
 
     return (
-        <div>
+        <Layout>
             {titulo}
             {subtitulo()}
             <p>
                 {JSON.stringify({nome: 'João', idade: 30})}
             </p>
-        </div>
+        </Layout>
     )
 }
 

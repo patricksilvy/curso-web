@@ -1,12 +1,19 @@
 import Layout from "@/components/Layout";
 
-export function getStaticProps() {
-    return {
-        props: {
-            num: Math.random()
-        }
+// export function getStaticProps() {
+//     return {
+//         props: {
+//             num: Math.random()
+//         }
+//     }
+// }
+
+export const getStaticProps = () => ({
+    props: {
+        num: Math.random()
     }
-}
+})
+
 export default function Estatico(props) {
     return (
         <Layout>

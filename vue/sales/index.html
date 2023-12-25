@@ -58,6 +58,21 @@
                         .then(data => this.sales = data)
                 }
             },
+            computed: {
+                salesByProduct() {
+                    if (!this.sales) return null
+
+                    const salesByProduct = this.sales.reduce((grouped, sale) => {
+                        if (!grouped.hasOwnProperty(sale.name)) {
+                            grouped[sale.name] = {
+                                name: sale.name,
+                                value: sale.price * sale.qtde
+                            }
+                        }
+                        return grouped
+                    }, {})
+                }
+            },
             mounted() {
                 this.getSales()
             }
